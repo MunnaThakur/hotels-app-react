@@ -7,7 +7,7 @@ const Userlist = () =>{
 
     const fetchUsers  = async() =>{
         try {
-            const res  = await axios.get("http://localhost:5000/users/all-users");
+            const res  = await axios.get("https://hotels-rest-api-production.up.railway.app/users/all-users");
             console.log("res",res.data)
             setUserData(res.data.data)
         } catch (error) {
